@@ -1,197 +1,207 @@
-@media screen and (max-width: 1060px) {
-    .posts {
-        padding: 20px; /* Ajustado para pantallas medianas */
-    }
-}
 
-@media screen and (max-width: 800px) {
-    /* Página de Inicio */
-    .main-container {
-        padding: 10px; /* Espaciado general */
-        text-align: center; /* Centra el contenido */
-    }
-
-    /* Navbar */
-    .nav-logo {
-        display: flex;
-        align-items: center;
-        justify-content: center; /* Centrar el logo */
-        margin-bottom: 20px; /* Espacio debajo del logo */
-    }
-
-    .nav-logo img {
-        width: 100%; /* Cambiar a 100% para que el logo ocupe todo el ancho */
-        max-width: 150px; /* Opcional: para limitar el tamaño en pantallas más grandes */
-    }
-
-    /* Texto de Bienvenida */
-    .main-container__text {
-        font-size: 20px; /* Tamaño de fuente ajustado */
-        margin-bottom: 20px; /* Espacio debajo del texto */
-    }
-
-    /* Contenido de Noticias */
-    .news {
-        padding: 10px; /* Ajustado */
-        width: 100%; /* Ocupa el ancho completo */
-    }
-
-    .news-content {
-        display: grid; /* Mantiene la rejilla activa */
-        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Ajuste automático de columnas */
-        gap: 15px; /* Espaciado entre elementos */
-    }
-
-    .news-content img {
-        width: 100%; /* Asegura que las imágenes se ajusten al ancho */
-        padding: 0; /* Elimina padding que puede causar desbordamiento */
-        border-radius: 8px; /* Bordes redondeados opcionales */
-    }
-
-    .posts-blog {
-        width: 100%; /* Cambiado para ocupar el 100% */
-        max-width: none; /* Asegúrate de que no haya un max-width */
-        padding: 0; /* Eliminar padding adicional */
-    }
-
-    /* Blog */
-    .main-blog {
-        padding: 20px; /* Ajustado */
-    }
-
-    .main-blog__content img {
-        width: 100%; /* Asegúrate de que las imágenes ocupen el 100% */
-        border-radius: 8px; /* Bordes redondeados opcionales */
-    }
-
-    .blog-content__article {
-        padding: 0; /* Ajustado */
-    }
-
-    /* Sección de Contacto */
-    .section-contact {
-        padding: 20px; /* Ajustado */
-    }
-
-    .contact {
-        display: grid; /* Cambiado a grid para mejor control */
-        margin: 0; /* Elimina márgenes para alineación adecuada */
-    }
-
-    /* Página de Perfil */
-    .profile {
-        padding: 20px; /* Ajustado */
-    }
-
-    .profile-img img {
-        width: 100%; /* Cambiado para ocupar el 100% */
-        border-radius: 8px; /* Bordes redondeados opcionales */
-    }
-
-    .projects-container {
-        padding: 20px; /* Ajustado */
-    }
-
-    .project {
-        width: 100%; /* Cambiado para ocupar el 100% */
-        text-align: center;
-        margin-bottom: 15px; /* Espacio entre proyectos */
-    }
-}
-
-@media screen and (max-width: 500px) {
-    /* Ajustes adicionales para pantallas muy pequeñas */
-    .social-icons {
-        width: 100%;
-        padding: 0 5px; /* Elimina padding innecesario */
-        margin: 0;
-    }
-
-    /* Ajustes en Navbar */
-    .nav-logo {
-        padding: 10px; /* Espaciado dentro de la navbar */
-    }
-
-    /* Texto de Bienvenida */
-    .main-container__text {
-        font-size: 18px; /* Tamaño de fuente más pequeño */
-        text-align: center; /* Centra el texto */
-        padding: 0 10px; /* Espaciado alrededor del texto */
-    }
-
-    /* Página de BLOGS */
-    .blogs-main {
-        padding: 0;
-    }
-
-    .news {
-        width: 100%;
-        padding: 10px; /* Espacio adicional */
-    }
-
-    .news-content {
-        display: grid; /* Mantiene la rejilla activa */
-        grid-template-columns: 1fr; /* Columna única en móviles */
-        gap: 10px; /* Espaciado entre elementos */
-    }
-
-    .news-content img {
-        width: 100%; /* Asegura que las imágenes se ajusten al ancho */
-        border-radius: 8px; /* Bordes redondeados opcionales */
-    }
-
-    .posts {
-        width: 100%;
-        padding: 10px; /* Espacio dentro de los posts */
-    }
-
-    .posts-blog {
-        width: 100%; /* Cambiado para ocupar el 100% */
-    }
-
-    /* Página de Blog */
-    .main-blog {
-        padding: 10px; /* Espacio ajustado */
-    }
-
-    .main-blog__content img {
-        padding: 0; /* Sin padding */
-    }
-
-    .blog-content__article {
-        padding: 0; /* Ajustado */
-    }
-
-    /* Sección de Contacto */
-    .section-contact {
-        padding: 10px; /* Espaciado ajustado */
-        display: grid; /* Mantiene el control de la sección */
-    }
-
-    .contact {
-        display: grid; /* Cambiado a grid para un mejor control */
-        margin: 0;
-    }
-
-    /* Página de Perfil */
-    .profile {
-        padding: 10px; /* Ajustado */
-        display: grid;
-    }
-
-    .profile-img img {
-        width: 100%; /* Cambiado para ocupar el 100% */
-        border-radius: 8px; /* Bordes redondeados opcionales */
-    }
-
-    .projects-container {
-        padding: 10px; /* Espaciado ajustado */
-    }
-
-    .project {
-        padding: 0;
-        width: 100%; /* Cambiado para ocupar el 100% */
-        text-align: center;
-        margin-bottom: 10px; /* Espacio entre proyectos */
-    }
-}
+  /* Ajustes para pantallas medianas (hasta 1060px) */
+  @media screen and (max-width: 1060px) {
+      .posts {
+          padding: 20px; /* Ajustado para pantallas medianas */
+      }
+  }
+  
+  /* Ajustes para pantallas pequeñas (hasta 800px) */
+  @media screen and (max-width: 800px) {
+      /* Página de Inicio */
+      .home-main {
+          grid-template-columns: 1fr; /* Una columna en pantallas pequeñas */
+          background-size: contain; /* Ajusta la imagen para que se vea completa */
+          height: auto; /* Ajusta la altura automáticamente */
+      }
+  
+      .main-container {
+          padding: 10px; /* Espaciado general */
+          text-align: center; /* Centra el contenido */
+      }
+  
+      /* Navbar */
+      .nav-logo {
+          display: flex;
+          align-items: center;
+          justify-content: center; /* Centrar el logo */
+          margin-bottom: 20px; /* Espacio debajo del logo */
+      }
+  
+      .nav-logo img {
+          width: 100%; /* Cambiar a 100% para que el logo ocupe todo el ancho */
+          max-width: 150px; /* Opcional: para limitar el tamaño en pantallas más grandes */
+      }
+  
+      /* Texto de Bienvenida */
+      .main-container__text {
+          font-size: 20px; /* Tamaño de fuente ajustado */
+          margin-bottom: 20px; /* Espacio debajo del texto */
+      }
+  
+      /* Contenido de Noticias */
+      .news {
+          padding: 10px; /* Ajustado */
+          width: 100%; /* Ocupa el ancho completo */
+      }
+  
+      .news-content {
+          display: grid; /* Mantiene la rejilla activa */
+          grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Ajuste automático de columnas */
+          gap: 15px; /* Espaciado entre elementos */
+      }
+  
+      .news-content img {
+          width: 100%; /* Asegura que las imágenes se ajusten al ancho */
+          padding: 0; /* Elimina padding que puede causar desbordamiento */
+          border-radius: 8px; /* Bordes redondeados opcionales */
+      }
+  
+      .posts-blog {
+          width: 100%; /* Cambiado para ocupar el 100% */
+          max-width: none; /* Asegúrate de que no haya un max-width */
+          padding: 0; /* Eliminar padding adicional */
+      }
+  
+      /* Blog */
+      .main-blog {
+          padding: 20px; /* Ajustado */
+      }
+  
+      .main-blog__content img {
+          width: 100%; /* Asegúrate de que las imágenes ocupen el 100% */
+          border-radius: 8px; /* Bordes redondeados opcionales */
+      }
+  
+      .blog-content__article {
+          padding: 0; /* Ajustado */
+      }
+  
+      /* Sección de Contacto */
+      .section-contact {
+          padding: 20px; /* Ajustado */
+      }
+  
+      .contact {
+          display: grid; /* Cambiado a grid para mejor control */
+          margin: 0; /* Elimina márgenes para alineación adecuada */
+      }
+  
+      /* Página de Perfil */
+      .profile {
+          padding: 20px; /* Ajustado */
+      }
+  
+      .profile-img img {
+          width: 100%; /* Cambiado para ocupar el 100% */
+          border-radius: 8px; /* Bordes redondeados opcionales */
+      }
+  
+      .projects-container {
+          padding: 20px; /* Ajustado */
+      }
+  
+      .project {
+          width: 100%; /* Cambiado para ocupar el 100% */
+          text-align: center;
+          margin-bottom: 15px; /* Espacio entre proyectos */
+      }
+  }
+  
+  /* Ajustes adicionales para pantallas muy pequeñas (hasta 500px) */
+  @media screen and (max-width: 500px) {
+      .social-icons {
+          width: 100%;
+          padding: 0 5px; /* Elimina padding innecesario */
+          margin: 0;
+      }
+  
+      /* Ajustes en Navbar */
+      .nav-logo {
+          padding: 10px; /* Espaciado dentro de la navbar */
+      }
+  
+      /* Texto de Bienvenida */
+      .main-container__text {
+          font-size: 18px; /* Tamaño de fuente más pequeño */
+          text-align: center; /* Centra el texto */
+          padding: 0 10px; /* Espaciado alrededor del texto */
+      }
+  
+      /* Página de BLOGS */
+      .blogs-main {
+          padding: 0;
+      }
+  
+      .news {
+          width: 100%;
+          padding: 10px; /* Espacio adicional */
+      }
+  
+      .news-content {
+          display: grid; /* Mantiene la rejilla activa */
+          grid-template-columns: 1fr; /* Columna única en móviles */
+          gap: 10px; /* Espaciado entre elementos */
+      }
+  
+      .news-content img {
+          width: 100%; /* Asegura que las imágenes se ajusten al ancho */
+          border-radius: 8px; /* Bordes redondeados opcionales */
+      }
+  
+      .posts {
+          width: 100%;
+          padding: 10px; /* Espacio dentro de los posts */
+      }
+  
+      .posts-blog {
+          width: 100%; /* Cambiado para ocupar el 100% */
+      }
+  
+      /* Página de Blog */
+      .main-blog {
+          padding: 10px; /* Espacio ajustado */
+      }
+  
+      .main-blog__content img {
+          padding: 0; /* Sin padding */
+      }
+  
+      .blog-content__article {
+          padding: 0; /* Ajustado */
+      }
+  
+      /* Sección de Contacto */
+      .section-contact {
+          padding: 10px; /* Espaciado ajustado */
+          display: grid; /* Mantiene el control de la sección */
+      }
+  
+      .contact {
+          display: grid; /* Cambiado a grid para un mejor control */
+          margin: 0;
+      }
+  
+      /* Página de Perfil */
+      .profile {
+          padding: 10px; /* Ajustado */
+          display: grid;
+      }
+  
+      .profile-img img {
+          width: 100%; /* Cambiado para ocupar el 100% */
+          border-radius: 8px; /* Bordes redondeados opcionales */
+      }
+  
+      .projects-container {
+          padding: 10px; /* Espaciado ajustado */
+      }
+  
+      .project {
+          padding: 0;
+          width: 100%; /* Cambiado para ocupar el 100% */
+          text-align: center;
+          margin-bottom: 10px; /* Espacio entre proyectos */
+      }
+  }
+  
