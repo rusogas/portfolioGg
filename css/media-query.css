@@ -11,8 +11,8 @@
       /* Página de Inicio */
       .home-main {
           grid-template-columns: 1fr; /* Una columna en pantallas pequeñas */
-          background-size: contain; /* Ajusta la imagen para que se vea completa */
-          height: auto; /* Ajusta la altura automáticamente */
+          background-size: cover; /* Ajusta la imagen para que se vea completa */
+          height: 100vh; /* Ajusta la altura automáticamente */
       }
   
       .main-container {
