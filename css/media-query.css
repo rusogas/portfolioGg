@@ -1,6 +1,6 @@
 @media screen and (max-width: 1060px) {
     .posts {
-        padding: 20px;
+        padding: 15px; /* Reducido un poco más para pantallas medianas */
     }
 }
 
@@ -9,59 +9,63 @@
 
     /* Página de BLOGS */
     .news {
-        padding: 20px;
+        padding: 15px; /* Ajustado */
     }
 
     .news-content {
-        grid-template-columns: auto auto;
+        display: grid; /* Asegúrate de que la rejilla esté activa */
+        grid-template-columns: 1fr; /* Columna única en móviles */
+        gap: 10px; /* Espaciado entre elementos */
     }
 
     .news-content img {
-        width: 90%;
-        padding: 10px;
+        width: 100%; /* Asegura que las imágenes se ajusten al ancho */
+        padding: 0; /* Elimina padding que puede causar desbordamiento */
     }
 
     .posts-blog {
-        max-width: 45%;
+        width: 100%; /* Cambiado para ocupar el 100% */
+        padding: 0; /* Eliminar padding adicional */
     }
 
     /* Página de Blog */
     .main-blog {
-        padding: 20px;
+        padding: 15px; /* Ajustado */
     }
 
     .main-blog__content img {
-        padding: 0;
+        width: 100%; /* Asegúrate de que las imágenes ocupen el 100% */
     }
 
     .blog-content__article {
-        padding: 0;
+        padding: 0; /* Ajustado */
     }
 
     .section-contact {
-        padding: 20px;
+        padding: 15px; /* Ajustado */
     }
 
     .contact {
-        display: grid;
+        display: flex; /* Cambiado a flexbox para un mejor control */
+        flex-direction: column; /* Alineación vertical */
         margin: 0;
     }
 
     /* Página de Perfil */
     .profile {
-        padding: 20px;
+        padding: 15px; /* Ajustado */
     }
 
     .profile-img img {
-        width: 90%;
+        width: 100%; /* Cambiado para ocupar el 100% */
     }
 
     .projects-container {
-        padding: 20px;
+        padding: 15px; /* Ajustado */
     }
 
     .project {
-        max-width: 45%;
+        width: 100%; /* Cambiado para ocupar el 100% */
         text-align: center;
     }
 }
@@ -77,20 +81,16 @@
     .nav-logo {
         display: flex;
         align-items: center;
-    }
-
-    .nav-logo,
-    .nav-link {
-        margin-right: 10px;
-        margin-left: 10px;
+        justify-content: center; /* Centrar el logo */
     }
 
     .nav-logo img {
-        width: 150px;
+        width: 130px; /* Ajustado */
     }
 
     .main-container__text {
-        font-size: 25px;
+        font-size: 20px; /* Ajustado */
+        text-align: center; /* Centrar el texto */
     }
 
     /* Página de BLOGS */
@@ -104,17 +104,13 @@
     }
 
     .news-content {
-        grid-template-columns: auto;
-        grid-template-rows: auto auto auto;
+        display: grid; /* Asegúrate de que la rejilla esté activa */
+        grid-template-columns: 1fr; /* Columna única en móviles */
+        gap: 10px; /* Espaciado entre elementos */
     }
 
     .news-content img {
-        grid-row: 2;
-    }
-
-    .news-content .news-info {
-        grid-row: 3;
-        grid-column: 1;
+        width: 100%; /* Asegura que las imágenes se ajusten al ancho */
     }
 
     .posts {
@@ -123,7 +119,7 @@
     }
 
     .posts-blog {
-        max-width: 100%;
+        width: 100%; /* Cambiado para ocupar el 100% */
     }
 
     /* Página de Blog */
@@ -132,11 +128,11 @@
     }
 
     .main-blog__content img {
-        padding: 0;
+        width: 100%; /* Asegúrate de que las imágenes ocupen el 100% */
     }
 
     .blog-content__article {
-        padding: 0;
+        padding: 0; /* Ajustado */
     }
 
     .section-contact {
@@ -145,7 +141,8 @@
     }
 
     .contact {
-        display: grid;
+        display: flex; /* Cambiado a flexbox para un mejor control */
+        flex-direction: column; /* Alineación vertical */
         margin: 0;
     }
 
@@ -156,7 +153,7 @@
     }
 
     .profile-img img {
-        width: 100%;
+        width: 100%; /* Cambiado para ocupar el 100% */
     }
 
     .projects-container {
@@ -165,7 +162,7 @@
 
     .project {
         padding: 0;
-        max-width: 100%;
+        width: 100%; /* Cambiado para ocupar el 100% */
         text-align: center;
     }
 }
