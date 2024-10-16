@@ -20,7 +20,8 @@
     }
 
     .nav-logo img {
-        width: 150px; /* Ajustado para que el logo se vea bien en móviles */
+        width: 100%; /* Cambiar a 100% para que el logo ocupe todo el ancho */
+        max-width: 150px; /* Opcional: para limitar el tamaño en pantallas más grandes */
     }
 
     /* Texto de Bienvenida */
