@@ -1,159 +1,151 @@
-/* General styles for larger screens */
-@media screen and (max-width: 1060px) {
-    .posts {
+@media screen and (max-width: 1060px){
+    .posts{
         padding: 20px;
     }
 }
+@media screen and (max-width: 800px){
+    /*Pagina de Inicio */
 
-/* Styles for medium screens (tablets, smaller laptops) */
-@media screen and (max-width: 800px) {
-    /* BLOGS Page */
-    .news {
+    /*Página de BLOGS */
+    .news{
         padding: 20px;
     }
-    .news-content {
-        display: grid;
-        grid-template-columns: 1fr 1fr; /* Two flexible columns */
-        gap: 10px;
+    .news-content{
+        grid-template-columns: auto auto;
     }
-    .news-content img {
-        width: 100%; /* Ensure images adapt to container width */
+    .news-content img{
+        width: 90%;
         padding: 10px;
     }
-    .posts-blog {
-        max-width: 100%; /* Ensure blog posts take full width */
-    }
 
-    /* Blog Post Page */
-    .main-blog {
+    .posts-blog{
+        max-width: 45%;
+    }
+    
+
+    /*Página de Blog*/
+    .main-blog{
         padding: 20px;
     }
-    .main-blog__content img {
-        width: 100%; /* Ensure images scale to full width */
+    .main-blog__content img{
         padding: 0;
     }
-    .blog-content__article {
+    .blog-content__article{
         padding: 0;
     }
 
-    /* Contact Section */
-    .section-contact {
+    .section-contact{
         padding: 20px;
     }
-    .contact {
+    .contact{
         display: grid;
-        margin: 0;
+        margin: 0px;
     }
 
-    /* Profile Page */
-    .profile {
+    /*Página de Perfil*/
+    .profile{
         padding: 20px;
     }
 
-    .profile-img img {
-        width: 100%; /* Images fully responsive */
+    .profile-img img{
+        width: 90%;
     }
 
-    .projects-container {
+    .projects-container{
         padding: 20px;
     }
-    .project {
-        max-width: 100%; /* Ensure projects take full width */
+    .project{
+        max-width: 45%;
         text-align: center;
     }
 }
 
-/* Styles for small screens (mobile phones) */
-@media screen and (max-width: 500px) {
-    /* Social icons on homepage */
-    .social-icons {
+@media screen and (max-width: 500px){
+    /*Pagina de Inicio */
+    .social-icons{
         width: 100%;
-        padding: 0 5px;
+        padding: 0 5px 0;
         margin: 0;
     }
-
-    /* Logo and navigation */
-    .nav-logo {
+    .nav-logo{
         display: flex;
         align-items: center;
     }
-    .nav-logo, .nav-link {
-        margin: 0 10px;
+    .nav-logo, .nav-link{
+        margin-right: 10px;
+        margin-left: 10px;
     }
-    .nav-logo img {
-        width: 120px; /* Smaller logo for mobile */
-    }
-
-    /* Main text in the homepage */
-    .main-container__text {
-        font-size: 18px; /* Smaller font for mobile */
+    .nav-logo img{
+        width: 150px;
     }
 
-    /* BLOGS Page */
-    .blogs-main {
+    .main-container__text{
+        font-size: 25px;
+    }
+
+    /*Página de BLOGS */
+    .blogs-main{
         padding: 0;
     }
-    .news {
+    .news{
         width: 100%;
         padding: 10px;
     }
-    .news-content {
-        grid-template-columns: 1fr; /* Single column layout for mobile */
-        grid-template-rows: auto;
+    .news-content{
+        grid-template-columns: auto;
+        grid-template-rows: auto auto auto;
     }
-    .news-content img {
+    .news-content img{
+        grid-row: 2;
+    }
+    .news-content .news-info{
+        grid-row: 3;
+        grid-column: 1;
+    }
+    .posts{
+        width: 100%;
+        padding: 10px;
+    }
+    .posts-blog{
+        max-width: 100%;
+    }
+
+    /*Página de Blog*/
+    .main-blog{
+        padding: 10px;
+    }
+    .main-blog__content img{
+        padding: 0;
+    }
+    .blog-content__article{
+        padding: 0;
+    }
+
+    .section-contact{
+        padding: 10px;
+        display: grid;
+    }
+    .contact{
+        display: grid;
+        margin: 0px;
+    }
+
+    /*Página de Perfil*/
+    .profile{
+        padding: 10px;
+        display: grid;
+    }
+
+    .profile-img img{
         width: 100%;
     }
-    .news-content .news-info {
-        grid-row: auto;
-    }
 
-    /* Blog Post */
-    .posts {
-        width: 100%;
+    .projects-container{
         padding: 10px;
     }
-    .posts-blog {
-        max-width: 100%; /* Ensure blog posts use full width */
-    }
-
-    /* Blog Post Page */
-    .main-blog {
-        padding: 10px;
-    }
-    .main-blog__content img {
-        width: 100%; /* Responsive images */
+    .project{
         padding: 0;
-    }
-    .blog-content__article {
-        padding: 0;
-    }
-
-    /* Contact Section */
-    .section-contact {
-        padding: 10px;
-        display: grid;
-    }
-    .contact {
-        display: grid;
-        margin: 0;
-    }
-
-    /* Profile Page */
-    .profile {
-        padding: 10px;
-        display: grid;
-    }
-    .profile-img img {
-        width: 100%; /* Ensure profile images use full width */
-    }
-
-    .projects-container {
-        padding: 10px;
-    }
-    .project {
-        padding: 0;
-        max-width: 100%; /* Ensure projects use full width */
+        max-width: 100%;
         text-align: center;
     }
 }
