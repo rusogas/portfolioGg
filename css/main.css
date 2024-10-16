@@ -312,3 +312,60 @@ footer p {
 .project p {
   margin-bottom: 35px;
 }
+
+/* MEDIA QUERIES PARA RESPONSIVIDAD */
+@media (max-width: 1000px) {
+  .home-main {
+    grid-template-columns: 1fr; /* Cambiar a una sola columna */
+    height: auto; /* Ajustar altura automáticamente */
+  }
+
+  .main-container {
+    height: auto; /* Permitir que el contenedor principal se ajuste */
+    margin-top: 20px; /* Reducir margen superior */
+  }
+
+  .main-container__text {
+    font-size: 24px; /* Reducir el tamaño de la fuente */
+    letter-spacing: 5px; /* Reducir el espaciado de letras */
+  }
+
+  .main-container__link {
+    margin-top: 50px; /* Reducir margen superior */
+  }
+
+  .blogs-main {
+    padding: 10px 20px; /* Ajustar el padding */
+  }
+
+  .news-content {
+    grid-template-columns: 1fr; /* Cambiar a una sola columna */
+  }
+
+  .posts-blog {
+    max-width: 100%; /* Asegurar que las publicaciones ocupen todo el ancho */
+  }
+
+  .section-contact {
+    flex-direction: column; /* Cambiar a columna */
+    align-items: center; /* Centrar elementos */
+  }
+
+  .contact-info {
+    width: auto; /* Ajustar el ancho */
+  }
+
+  .profile {
+    flex-direction: column; /* Cambiar a columna */
+    align-items: center; /* Centrar elementos */
+    padding: 20px; /* Reducir padding */
+  }
+
+  .projects-container {
+    padding: 0 20px 20px; /* Ajustar el padding */
+  }
+
+  .project {
+    max-width: 100%; /* Asegurar que los proyectos ocupen todo el ancho */
+  }
+}
